@@ -55,13 +55,6 @@
   }
 } */
 
-@media (max-width: 664px) {
-  .ancho {
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-}
-
 @media (min-width: 664px) {
   .ancho {
     max-width: 840px;    
@@ -116,4 +109,9 @@
 }
 .parrafo {
   padding: 15px;
+}
+
+.articleListContainer {
+  margin-right: 24px;
+  margin-left: 24px;
 }
