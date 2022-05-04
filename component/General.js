@@ -22,6 +22,12 @@ function General() {
       descripcion:
         "33333333 Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
     },
+    {
+      imagen: "/passwords.png",
+      titulo: "Contraseña3",
+      descripcion:
+        "33333333 Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
+    },
   ];
 
   return (
