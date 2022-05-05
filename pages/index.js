@@ -16,6 +16,7 @@ export default function Home() {
           <span>
             Blog <span>de San Lorenzo</span>
           </span>
+          <img src="Menu.svg" alt="Menu"/>
         </nav>
         <div>
           <h1 className={styles.hola}>Hola</h1>

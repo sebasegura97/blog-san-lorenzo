@@ -33,7 +33,11 @@ function General() {
   return (
     <div>
       {names.map((name) => (
-        <Contraseñas titulo={name.titulo} imagen={name.imagen} descripcion={name.descripcion} />
+        <Contraseñas
+          titulo={name.titulo}
+          imagen={name.imagen}
+          descripcion={name.descripcion}
+        />
       ))}
     </div>
   );

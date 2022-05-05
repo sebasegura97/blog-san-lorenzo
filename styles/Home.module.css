@@ -4,8 +4,9 @@
   height: 56px;
   display: flex;
   align-items: center;
-  padding-left: 16px;
+  padding: 0 16px;
   backdrop-filter: blur(20px);
+  justify-content: space-between;
 }
 
 .navbar span span {
