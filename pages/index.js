@@ -1,9 +1,13 @@
+import { useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
 import General from "../component/General.js";
 
-export default function Home() {
+import { database } from "../firebase";
+import { collection, getDocs } from "firebase/firestore";
+
+export default function Home({ posts }) {
   return (
     <div className={styles.container}>
       <Head>
@@ -36,3 +40,18 @@ export default function Home() {
     </div>
   );
 }
+
+export const getServerSideProps = async () => {
+  const rawData = await getDocs(collection(database, "posts"));
+  const postsList = [];
+
+  rawData.forEach((doc) => {
+    posts.push({ id: doc.id, ...doc.data() });
+  });
+
+  return {
+    props: {
+      posts: postsList,
+    },
+  };
+};
