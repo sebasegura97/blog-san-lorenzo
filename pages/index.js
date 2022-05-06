@@ -7,7 +7,10 @@ import General from "../component/General.js";
 import { database } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 
-export default function Home({ posts }) {
+export default function Home(props) {
+  console.log('props.posts', props.posts)
+  console.log('props.nombre', props.nombre)
+
   return (
     <div className={styles.container}>
       <Head>
@@ -45,13 +48,16 @@ export const getServerSideProps = async () => {
   const rawData = await getDocs(collection(database, "posts"));
   const postsList = [];
 
+  const nombre = 'Mario'
+
   rawData.forEach((doc) => {
-    posts.push({ id: doc.id, ...doc.data() });
+    postsList.push({ id: doc.id, ...doc.data() });
   });
 
   return {
     props: {
       posts: postsList,
+      nombre
     },
   };
 };
