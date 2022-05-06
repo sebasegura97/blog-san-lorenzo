@@ -11,22 +11,16 @@ function General() {
 
     {
       imagen: "/passwords.png",
-      titulo: "Contraseña2",
+      titulo: "Contraseña",
       descripcion:
-        "2222222 Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
+        "Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
     },
 
     {
       imagen: "/passwords.png",
-      titulo: "Contraseña3",
+      titulo: "Contraseña",
       descripcion:
-        "33333333 Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
-    },
-    {
-      imagen: "/passwords.png",
-      titulo: "Contraseña3",
-      descripcion:
-        "33333333 Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
+        "Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
     },
   ];
 

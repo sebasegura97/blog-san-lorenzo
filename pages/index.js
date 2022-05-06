@@ -11,12 +11,14 @@ export default function Home() {
         <meta name="description" content="El mejor blog del mundo" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={`${styles.fondo} ${styles.ancho}`}>
+      <div className={`${styles.fondo}`}>
         <nav className={styles.navbar}>
           <span>
             Blog <span>de San Lorenzo</span>
           </span>
-          <img src="Menu.svg" alt="Menu"/>
+          <button className={styles.button}>
+            <img src="Menu.svg" alt="Menu"/>
+          </button>
         </nav>
         <div>
           <h1 className={styles.hola}>Hola</h1>
@@ -28,7 +30,7 @@ export default function Home() {
       </div>
 
       <div className={styles.articleListContainer}>
-        <h1 className={styles.ancho}>General</h1>
+        <h1>General</h1>
         <General />
       </div>
     </div>

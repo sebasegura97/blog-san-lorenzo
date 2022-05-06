@@ -2,14 +2,16 @@ import styles from "../styles/Home.module.css";
 
 function Contraseñas(props) {
   return (
-    <div className={`${styles.ancho} ${styles.contraseña} `}>
-      <div>
-        <img className={styles.passwords} src={props.imagen} alt="passwords" />
-        <div className={styles.parrafo}>
-          <h3>{props.titulo}</h3>
-          <p>{props.descripcion}</p>
+    <div className={`${styles.contraseña} `}>
+      {/* <div> */}
+        <div className={styles.contentImg}>
+          <img className={styles.passwords} src={props.imagen} alt="passwords" />
         </div>
-      </div>
+        <div className={styles.parrafo}>
+          <h2 className={styles.subtitulo}>{props.titulo}</h2>
+          <p className={styles.descripcion}>{props.descripcion}</p>
+        </div>
+      {/* </div> */}
     </div>
   );
 }
