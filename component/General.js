@@ -1,39 +1,17 @@
 import Contraseñas from "../component/Contraseñas.js";
 
-function General() {
-  const names = [
-    {
-      imagen: "/passwords.png",
-      titulo: "Contraseña",
-      descripcion:
-        "Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
-    },
-
-    {
-      imagen: "/passwords.png",
-      titulo: "Contraseña",
-      descripcion:
-        "Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
-    },
-
-    {
-      imagen: "/passwords.png",
-      titulo: "Contraseña",
-      descripcion:
-        "Este articulo será siempre actualizado, mostrando la motivación y el proceso de este proyecto.",
-    },
-  ];
-
+function General(props) {
   return (
-    <div>
-      {names.map((name) => (
+    <>
+      {props.listado.map((name) => (
         <Contraseñas
+          key= {name.id}
           titulo={name.titulo}
           imagen={name.imagen}
           descripcion={name.descripcion}
         />
       ))}
-    </div>
+    </>
   );
 }
 

@@ -8,8 +8,8 @@ import { database } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
 
 export default function Home(props) {
-  console.log('props.posts', props.posts)
-  console.log('props.nombre', props.nombre)
+  console.log("props.posts", props.posts);
+  console.log("props.nombre", props.nombre);
 
   return (
     <div className={styles.container}>
@@ -17,6 +17,7 @@ export default function Home(props) {
         <title>Blog</title>
         <meta name="description" content="El mejor blog del mundo" />
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"></link>
       </Head>
       <div className={`${styles.fondo}`}>
         <nav className={styles.navbar}>
@@ -24,21 +25,21 @@ export default function Home(props) {
             Blog <span>de San Lorenzo</span>
           </span>
           <button className={styles.button}>
-            <img src="Menu.svg" alt="Menu"/>
+            <img src="Menu.svg" alt="Menu" />
           </button>
         </nav>
-        <div>
-          <h1 className={styles.hola}>Hola</h1>
-          <p className={styles.gracias}>
-            Gracias por llegar aqui, espero que disfrutes del contenido tanto
-            como yo haciéndolo!
-          </p>
+        <div className={styles.titulo}>
+          <h1 className={styles.hola}>Hola {props.nombre}</h1>
         </div>
+        <p className={styles.gracias}>
+          {props.gracias}
+        </p>
       </div>
-
       <div className={styles.articleListContainer}>
-        <h1>General</h1>
-        <General />
+        <h1 className={styles.hola}>General</h1>
+        <div className={styles.lista}>
+          <General listado={props.posts} />
+        </div>
       </div>
     </div>
   );
@@ -48,16 +49,22 @@ export const getServerSideProps = async () => {
   const rawData = await getDocs(collection(database, "posts"));
   const postsList = [];
 
-  const nombre = 'Mario'
+  const nombreMario = "Seba!";
+  const parrafo = 
+  `Gracias por traerme hasta aqui. 
+  Espero (de ha poco) avanzar  más alla..!! 
+  Y disfrutar el placer de ser parte 
+  de este maravilloso universo!`;
 
   rawData.forEach((doc) => {
-    postsList.push({ id: doc.id, ...doc.data() });
+  postsList.push({ id: doc.id, ...doc.data() });
   });
 
   return {
     props: {
       posts: postsList,
-      nombre
+      nombre: nombreMario,
+      gracias: parrafo
     },
   };
 };

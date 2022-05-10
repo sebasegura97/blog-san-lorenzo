@@ -1,12 +1,15 @@
-
 .navbar{
   width: 100%;
-  height: 56px;
+  height: 42px;
   display: flex;
   align-items: center;
   padding: 0 16px;
-  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
   justify-content: space-between;
+  font-family: quicksand;
+  font-weight: 500;
+  background: #ffffff66;
 }
 
 .navbar span span {
@@ -14,10 +17,10 @@
 }
 
 .fondo {
-  background-image: url("/fondo.png");
+  background-image: url("/vector1.svg");
   background-position: center;
   background-size: cover;
-  height: 320px;
+  height: 347px;
 }
 
 .fondo2 {
@@ -27,93 +30,74 @@
 }
 
 .hola {
-  text-align: center;
-  width: 150px;
-  margin: 15px auto 0;
-  -webkit-backdrop-filter: blur(20px);
-  backdrop-filter: blur(20px);
-  border-radius: 20px;
-  background: #ffffff00;
+  font-family: 'Quicksand';
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0;
 }
 
 .gracias {
-  text-align: center;
-  width: 230px;
+  width: 258px;
   margin: 0 auto;
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+  border-radius: 16px;
+  background: #ffffff66;
+  padding: 3px 5px;
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+}
+
+.lista {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+}
+
+.titulo {
+  width: 212px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  margin: 65px auto 0;
+  background: #ffffff66;
   border-radius: 20px;
-  background: #ffffff00;
-  padding: 10px;
-}
-
-/* @media (min-width: 500px) {
-  #ca1 {
-    display: none;
-  }
-  #ca2 {
-    display: flex;
-  }
-} */
-
-@media (min-width: 664px) {
-  .ancho {
-    max-width: 840px;    
-    margin-left: 32px;
-    margin-right: 32px;
-  }
-}
-@media (min-width: 904px) {
-  .ancho {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 1240px) {
-  .ancho {
-    max-width: 1040px;
-    margin-left: 200px;
-    margin-right: 200px;
-  }
-}
-
-@media (min-width: 1440px) {
-  .ancho {
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
-
-@media (min-width: 1600px) {
-  .ancho {
-    max-width: 1200px;
-    margin-left: 280px;
-    margin-right: 280px;
-  }
-}
-
-@media (min-width: 1760px) {
-  .ancho {
-    margin-left: auto;
-    margin-right: auto
-  }
+  backdrop-filter: blur(20px);
+  align-items: center;
 }
 
 .contraseña {
   display: flex;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
+  min-height: 150px;
+}
+
+.contentImg {
+  width: 51%;
+  position: relative;
+  max-width: 230px;
+}
+
+.parrafo {
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .passwords {
-  border-radius: 15px;
+  border-radius: 16px;
   position: absolute;
+  width: 100%;
   height: 100%;
-  display: block;
-}
-.parrafo {
-  padding: 15px;
-  width: 60%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  object-fit: cover;
 }
 
 .articleListContainer {
@@ -124,27 +108,100 @@
 .button {
   border: none;
   background: none;
-}
-
-.container {
-  background-color: aquamarine;
-}
-
-.contentImg {
-  width: 150px;
-  overflow: hidden;
-  position: relative;
-  border-radius: 15px;
-  text-align: center;
+  padding: 0;
   display: flex;
-  justify-content: center;
 }
 
 .descripcion {
   font-size: 12px;
   margin: 6px 0;
+  padding-left: 10px;
 }
 
 .subtitulo {
   margin: 0;
+  padding-left: 6px;
+}
+
+@media (min-width: 382px) {
+  .fondo {
+    background-image: url("/vector2.svg");
+    height: 400px;
+  }
+  .titulo {
+    margin: 70px auto 0;
+  }
+}
+
+@media (min-width: 540px) {
+
+  .articleListContainer {
+    margin-right: 36px;
+    margin-left: 36px;
+  }
+
+  .fondo {
+    height: 440px;
+  }
+
+  .hola {
+    font-size: 72px;
+  }
+
+  .titulo {
+    width: 390px;
+    height: 97px;
+    margin: 90px auto 0;
+  }
+
+  .gracias {
+    width: 490px;
+    font-size: 24px;
+    line-height: 30px;
+    padding: 8px 12px;
+  }
+
+  .contraseña {
+    display: block;
+    width: 48.5%;
+    min-height: 200px;
+  }
+
+  .lista {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contentImg {
+    position: relative;
+    max-width: 100%;
+    height: 100%;
+    width: 100%;
+  }
+
+  .parrafo {
+    width: 100%;
+  }
+
+  .descripcion {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .articleListContainer {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 904px;
+  }
+
+  .fondo {
+    background-image: url("/vector3.svg");
+  }
+
+  .navbar{
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 904px;
+  }
 }
