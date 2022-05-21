@@ -2,7 +2,8 @@ import { useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import General from "../component/General.js";
+import ListCard from "../component/ListCard.js";
+import Layout from "../component/Layout.js";
 
 import { database } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
@@ -14,33 +15,29 @@ export default function Home(props) {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Blog</title>
+        <title>Home</title>
         <meta name="description" content="El mejor blog del mundo" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.svg" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"></link>
       </Head>
-      <div className={`${styles.fondo}`}>
-        <nav className={styles.navbar}>
-          <span>
-            Blog <span>de San Lorenzo</span>
-          </span>
-          <button className={styles.button}>
-            <img src="Menu.svg" alt="Menu" />
-          </button>
-        </nav>
-        <div className={styles.titulo}>
-          <h1 className={styles.hola}>Hola {props.nombre}</h1>
+      <Layout>
+        <div className={`${styles.fondo}`}>
+          <div className={styles.titulo}>
+            <h1 className={styles.hola}>Hola {props.nombre}</h1>
+          </div>
+          <pre className={styles.gracias}>
+            {props.gracias}
+          </pre>
         </div>
-        <p className={styles.gracias}>
-          {props.gracias}
-        </p>
-      </div>
-      <div className={styles.articleListContainer}>
-        <h1 className={styles.hola}>General</h1>
-        <div className={styles.lista}>
-          <General listado={props.posts} />
+        <h1 className={styles.general}>General</h1>
+        <div className={styles.articleListContainer}>
+          
+          <div className={styles.lista}>
+            <ListCard listado={props.posts} />
+          </div>
         </div>
-      </div>
+      </Layout>
+      
     </div>
   );
 }
@@ -49,12 +46,12 @@ export const getServerSideProps = async () => {
   const rawData = await getDocs(collection(database, "posts"));
   const postsList = [];
 
-  const nombreMario = "Seba!";
+  const nombreMario = "";
   const parrafo = 
-  `Gracias por traerme hasta aqui. 
-  Espero (de ha poco) avanzar  más alla..!! 
-  Y disfrutar el placer de ser parte 
-  de este maravilloso universo!`;
+  "Gracias por traerme hasta aqui.\n" + 
+  "\Espero avanzar !más alla!\n" + 
+  "\Y disfrutar el placer de ser parte\n" + 
+  "\de este  Maravilloso Universo!";
 
   rawData.forEach((doc) => {
   postsList.push({ id: doc.id, ...doc.data() });

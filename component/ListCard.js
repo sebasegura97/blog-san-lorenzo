@@ -1,10 +1,10 @@
-import Contraseñas from "../component/Contraseñas.js";
+import Card from "../component/Card.js";
 
-function General(props) {
+export default function ListCard(props) {
   return (
     <>
       {props.listado.map((name) => (
-        <Contraseñas
+        <Card
           key= {name.id}
           titulo={name.titulo}
           imagen={name.imagen}
@@ -14,5 +14,3 @@ function General(props) {
     </>
   );
 }
-
-export default General;
