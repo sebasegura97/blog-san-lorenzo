@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function Layout(props) { 
   return (
-    <div>
+    <>
       <Head>
       
         <link
@@ -13,10 +13,10 @@ export default function Layout(props) {
         />
       </Head>
       <Navbar />
-      <div>
+      <>
         {props.children}
-      </div>
+      </>
       <Footer />
-    </div>
+    </>
   );
 }

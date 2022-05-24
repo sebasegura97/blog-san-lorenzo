@@ -5,7 +5,7 @@ import Link from "next/link";
 function Navbar(props) {
   return (
     <>
-        <nav className= {`"navbar navbar-expand-lg navbar-light bg-light" ${styles.navbar}`}>
+        <nav className= {` "navbar navbar-expand-lg navbar-light bg-light" ${styles.navbar}`}>
           <Link href="/">
             <a className="navbar-brand">
               <span>

@@ -10,13 +10,13 @@ export default function Footer(props) {
             </p>
             <div className={styles.redesSociales}>
             <a>
-            <img src="facebook.svg" alt="icon-LinkedIn" />
+            <img src="facebook.svg" alt="icono facebook" />
             </a>
             <a>
-            <img src="LinkedIn.svg" alt="icon-LinkedIn" />
+            <img src="LinkedIn.svg" alt="icon LinkedIn" />
             </a>
             <a>
-            <img src="Instagram.svg" alt="icon-LinkedIn" />
+            <img src="Instagram.svg" alt="icon Instagram" />
             </a>
             </div>
         </footer>

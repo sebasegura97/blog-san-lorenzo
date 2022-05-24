@@ -37,12 +37,12 @@ export default function CorDial() {
   } */
   
 
-    const style = { 
+  const style = { 
     container: {
     display: "flex",
     paddingLeft: "10px"
     },
-    corazon: {
+    like: {
       display: "flex",
       marginRight: "27px"
     },
@@ -61,24 +61,26 @@ export default function CorDial() {
     parrafo: {
       fontSize: "12px",
       lineHeight: "15px",
-      margin: "16px 0 0 0",
+      margin: "16px 6px 0 0",
       color: "#07C5DF",
       fontWeight: "700"
     }
-  }
+  } 
 
   return (
     <>
-        <div style= {style.container}>
-            <div style= {style.corazon}>
-                <img style= {style.image} src="corazon.svg" alt="corazon"/>
-                <p style= {style.parrafo}>12</p>
-            </div>
-            <div style= {style.corazon}>
-                <img style= {style.image} src="dialogo.svg" alt="dialogo"/>
-                <p style= {style.parrafo}>20</p>
-            </div>
-        </div>
+      <div style= {style.container}>
+          <div style= {style.like}>
+              <img style= {style.image} src="like.svg" alt="Me gusta"/>
+              <p style= {style.parrafo}>12</p>
+          </div>
+          <div style= {style.like}>
+              <img style= {style.image} src="coment.svg" alt="dialogo"/>
+              <p style= {style.parrafo}>20</p>
+          </div>
+      </div>
     </>
   );
 }
+
+
