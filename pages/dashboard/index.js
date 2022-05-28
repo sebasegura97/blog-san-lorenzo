@@ -1,9 +1,10 @@
-import Layout from "../../component/dashboard/Layout";
+import Layout from "../../components/dashboard/Layout";
+import Editor from "../../components/dashboard/Editor";
 
 const Dashboard = () => {
   return (
     <Layout>
-      <div>dashboard</div>
+      <Editor />
     </Layout>
   );
 };

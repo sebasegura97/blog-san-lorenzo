@@ -1,4 +1,4 @@
-import Contraseñas from "../component/Contraseñas.js";
+import Contraseñas from "./Contraseñas";
 
 function General(props) {
   return (
