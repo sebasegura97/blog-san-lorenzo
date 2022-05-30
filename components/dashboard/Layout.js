@@ -1,5 +1,5 @@
 import React from "react";
-import { createTheme, ThemeProvider, styled } from "@mui/material/styles";
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 
 import AppBar from "./AppBar";
 
@@ -15,7 +15,7 @@ export const themeOptions = {
   },
 };
 
-const theme = createTheme(themeOptions)
+const theme = createTheme(themeOptions);
 
 const Layout = ({ children }) => {
   return (

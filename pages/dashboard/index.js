@@ -1,11 +1,11 @@
-import Layout from "../../components/dashboard/Layout";
-import Editor from "../../components/dashboard/Editor";
+import { AuthContextProvider } from "../../components/AuthContext";
+import DashboardMainPage from "../../components/dashboard/views/Main";
 
 const Dashboard = () => {
   return (
-    <Layout>
-      <Editor />
-    </Layout>
+    <AuthContextProvider>
+      <DashboardMainPage />
+    </AuthContextProvider>
   );
 };
 
