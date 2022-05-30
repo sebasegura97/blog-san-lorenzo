@@ -15,73 +15,103 @@ export default function Home(props) {
       <Head>
         <title>Home</title>
         <meta name="description" content="El mejor blog del mundo" />
-        <link rel="icon" href="/favicon.svg" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"></link>
       </Head>
       <Layout>
         <header>
           <div className={styles.fondo}>
             <span className={styles.span}>
-              <svg
-                className={styles.svg}
+              <svg className={styles.svg}
                 xmlns="http://www.w3.org/2000/svg"
-                width= "320"
+                width="320"
                 height="347"
-                viewBox="0 0 320 347"> 
-                <g className={styles.g}>
-                  <path d="M55.8246 282.433C43.0246 234.833 -19.1754 278.433 -56.1754 282.433C-93.1754 286.433 -41.6755 202.433 -8.17544 157.933C25.3246 113.433 177.825 156.433 169.325 235.433C160.825 314.433 68.6246 330.033 55.8246 282.433Z" fill="url(#paint0_radial_24_22)"/>
-                  <path d="M225.488 113.156C210.364 60.3012 136.871 108.714 93.1531 113.156C49.4352 117.597 110.286 24.3245 149.868 -25.0877C189.451 -74.5 369.639 -26.7533 359.596 60.9674C349.553 148.688 240.612 166.01 225.488 113.156Z" fill="url(#paint1_radial_24_22)"/>
-                  <path d="M331.488 317.156C316.364 264.301 242.871 312.714 199.153 317.156C155.435 321.597 216.286 228.325 255.868 178.912C295.451 129.5 475.639 177.247 465.596 264.967C455.553 352.688 346.612 370.01 331.488 317.156Z" fill="url(#paint2_radial_24_22)"/>
+                viewBox="0 0 320 347"
+                fill="none">
+                <g className={styles.g} >
+                  <path
+                      d="m 55.8246,282.433 c -12.8,-47.6 -75,-4 -112,0 -37,4 14.4999,-80 47.99996,-124.5 33.50004,-44.5 186.00044,-1.5 177.50044,77.5 -8.5,79 -100.7004,94.6 -113.5004,47 z"
+                      fill="url(#paint0_radial_24_22)"
+                      style={{fill:"url(#radialGradient860)"}} />
+                  <path
+                      d="m 225.488,113.156 c -15.124,-52.8548 -88.617,-4.442 -132.3349,0 C 49.4352,117.597 110.286,24.3245 149.868,-25.0877 189.451,-74.5 369.639,-26.7533 359.596,60.9674 349.553,148.688 240.612,166.01 225.488,113.156 Z"
+                      fill="url(#paint1_radial_24_22)"
+                      style={{fill:"url(#radialGradient862)"}} />
+                  <path
+                      d="m 331.488,317.156 c -15.124,-52.855 -88.617,-4.442 -132.335,0 -43.718,4.441 17.133,-88.831 56.715,-138.244 39.583,-49.412 219.771,-1.665 209.728,86.055 -10.043,87.721 -118.984,105.043 -134.108,52.189 z"
+                      fill="url(#paint2_radial_24_22)"
+                      style={{fill:"url(#radialGradient864)"}} />
                 </g>
-                <defs
-                  id="defs23">
+                <defs>
                   <radialGradient
-                    id="paint0_radial_24_22"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="matrix(-131.8196,234.71735,-278.60042,-156.46477,368.844,112.283)">
+                      id="paint0_radial_24_22"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      /* gradientUnits="userSpaceOnUse" */
+                      gradientTransform="matrix(-131.8196,234.71735,-278.60042,-156.46477,368.844,112.283)">
                     <stop
-                      stopColor="#FFD057"
-                      id="stop8" />
+                        offset="0"
+                        stop-color= "#b27700" />
                     <stop
-                      offset="1"
-                      stopColor="#E6A604"
-                      id="stop10" />
+                        stop-color="#ffbf4c"
+                        offset="1" />
                   </radialGradient>
                   <radialGradient
-                    id="paint1_radial_24_22"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="matrix(-131.8196,234.71735,-278.60042,-156.46477,368.844,112.283)">
+                      id="paint1_radial_24_22"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientTransform="matrix(-131.8196,234.71735,-278.60042,-156.46477,368.844,112.283)">
                     <stop
-                      offset="0.244792"
-                      stopColor="#07C5DF"
-                      id="stop13" />
+                        offset="0.09562337"
+                        stop-color="#009bb2" />
                     <stop
-                      offset="1"
-                      stopColor="#26E4FF"
-                      id="stop15" />
+                        offset="1"
+                        stop-color="#4ceaff" />
                   </radialGradient>
                   <radialGradient
-                    id="paint2_radial_24_22"
-                    cx="0"
-                    cy="0"
-                    r="1"
-                    gradientUnits="userSpaceOnUse"
-                    gradientTransform="matrix(-217.5,0,0,-270.263,415,253)">
+                      id="paint2_radial_24_22"
+                      cx="0"
+                      cy="0"
+                      r="1"
+                      gradientTransform="matrix(-217.5,0,0,-270.263,415,253)">
                     <stop
-                      offset="0.630208"
-                      stopColor="#CB0CCE"
-                      id="stop18" />
+                        offset="0.11508808"
+                        stop-color="#b200b2" />
                     <stop
-                      offset="1"
-                      stopColor="#FA00FF"
-                      id="stop20" />
+                        offset="1"
+                        stop-color="#fa4cff" />
                   </radialGradient>
+                  <radialGradient
+                      href="#paint0_radial_24_22"
+                      id="radialGradient860"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="matrix(153.92872,-52.413315,49.988903,146.80866,-240.75098,270.24986)"
+                      cx="1.3081204"
+                      cy="0.71761847"
+                      r="1"
+                      fx="1.3081204"
+                      fy="0.71761847" />
+                  <radialGradient
+                      href="#paint1_radial_24_22"
+                      id="radialGradient862"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="matrix(174.39548,-71.228294,60.563471,148.28372,18.029227,90.898347)"
+                      cx="0.59521705"
+                      cy="0.62011725"
+                      r="1"
+                      fx="0.59521705"
+                      fy="0.62011725" />
+                  <radialGradient
+                    href="#paint2_radial_24_22"
+                      id="radialGradient864"
+                      gradientUnits="userSpaceOnUse"
+                      gradientTransform="matrix(161.38666,-73.876789,66.186793,144.58757,196.68324,442.90733)"
+                      cx="0.6363765"
+                      cy="-0.34444663"
+                      r="1"
+                      fx="0.6363765"
+                      fy="-0.34444663" />
                 </defs>
               </svg>
             </span>
@@ -95,10 +125,9 @@ export default function Home(props) {
             </p>
           </div>
         </header>
-        <main>
-          <h1 className={styles.general}>General</h1>
+        <main className={styles.main}>
           <div className={styles.articleListContainer}>
-            
+            <h1 className={styles.general}>General</h1>
             <div className={styles.lista}>
               <ListCard listado={props.posts} />
             </div>
@@ -129,6 +158,7 @@ export const getServerSideProps = async () => {
     },
   };
 };
+
 
 
 
