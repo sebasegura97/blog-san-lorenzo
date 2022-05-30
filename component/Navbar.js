@@ -5,44 +5,30 @@ import Link from "next/link";
 function Navbar(props) {
   return (
     <>
-        <nav className= {` "navbar navbar-expand-lg navbar-light bg-light" ${styles.navbar}`}>
+      <nav className= {styles.navbar}>
+        <div className= {styles.navbarContent}>
           <Link href="/">
-            <a className="navbar-brand">
+            <a/*  className="navbar-brand" */>
               <span>
-                Blog <span>de San Lorenzo</span>
+                Blog <p>de San Lorenzo</p>
               </span>
             </a>
           </Link>
-          <button
-            className={`"navbar-toggler" ${styles.button}`}
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <img src="Menu.svg" alt="Menu"/>
-          </button>
-          <div className={`"collapse navbar-collapse" ${styles.navigation}`} id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link href="/elBlog">
-                <a className="nav-linkx">
-                  El Blog
-                </a>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link href="/#">
-                <a className="nav-linkx">
-                  Otro
-                </a>
-                </Link>
-              </li>
-            </ul>
+          <div className= {styles.navmenu}>
+            <button className= {styles.navmenubtn}>
+              <svg
+                className= {styles.svgMenu}
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="13.71"
+                viewBox="0 0 18 13.71">
+                <path className= {styles.path}
+                  d="M 0.796875 0.30078125 C 0.52175808 0.30078125 0.30078125 0.55717909 0.30078125 0.87695312 L 0.30078125 1.8222656 C 0.30078125 2.1420397 0.52175808 2.4003906 0.796875 2.4003906 L 17.203125 2.4003906 C 17.478242 2.4003906 17.699219 2.1420397 17.699219 1.8222656 L 17.699219 0.87695312 C 17.699219 0.55717909 17.478242 0.30078125 17.203125 0.30078125 L 0.796875 0.30078125 z M 0.796875 5.8046875 C 0.5217581 5.8046875 0.30078125 6.0630385 0.30078125 6.3828125 L 0.30078125 7.328125 C 0.30078125 7.647899 0.5217581 7.9042969 0.796875 7.9042969 L 17.203125 7.9042969 C 17.478242 7.9042969 17.699219 7.647899 17.699219 7.328125 L 17.699219 6.3828125 C 17.699219 6.0630385 17.478242 5.8046875 17.203125 5.8046875 L 0.796875 5.8046875 z M 0.796875 11.300781 C 0.52175808 11.300781 0.30078125 11.557179 0.30078125 11.876953 L 0.30078125 12.822266 C 0.30078125 13.14204 0.52175808 13.400391 0.796875 13.400391 L 17.203125 13.400391 C 17.478242 13.400391 17.699219 13.14204 17.699219 12.822266 L 17.699219 11.876953 C 17.699219 11.557179 17.478242 11.300781 17.203125 11.300781 L 0.796875 11.300781 z " />
+              </svg>
+            </button>
           </div>
-        </nav>
+        </div>
+      </nav>
     </>
   );
 }

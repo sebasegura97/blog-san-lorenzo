@@ -14,7 +14,6 @@ export default function ElBlog(props) {
       <Head>
         <title>El Blog</title>
         <meta name="description" content="Mi primer artículo" />
-        <link rel="icon" href="/favicon.svg" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand"></link>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red Hat Mono"></link>
       </Head>
@@ -44,13 +43,13 @@ export default function ElBlog(props) {
             <br/>
             <ol className={styles.mainol}>
               <li>
-                <b>Compartir</b> aunque sea un poquito de información, honesta transparente     y desinteresada que pueda  ayudar a alguien más, como a mi me ayudo internet casi toda mi vida.
+                <p><b>Compartir</b> aunque sea un poquito de información, honesta transparente y desinteresada que pueda  ayudar a alguien más, como a mi me ayudo internet casi toda mi vida.</p>
               </li>
               <li>
-                <b>Escribir</b> es un cable a tierra, me ayuda a organizar pensamientos y entenderme a mi mismo, no todos deberían compartir lo que escriben, pero todos deberían escribir.
+                <p><b>Escribir</b> es un cable a tierra, me ayuda a organizar pensamientos y entenderme a mi mismo, no todos deberían compartir lo que escriben, pero todos deberían escribir.</p>
               </li>
               <li>
-                <b>Divertirme</b> encarar un proyecto nuevo siempre me apasionó y si bien no tengo ningún tipo de expectativa más allá que compartir escribir y divertirme no puedo evitar pensar en grande.
+              <p><b>Divertirme,</b> encarar un proyecto nuevo siempre me apasionó y si bien no tengo ningún tipo de expectativa más allá que compartir escribir y divertirme no puedo evitar pensar en grande.</p>
               </li>
             </ol>
           </div>

@@ -6,7 +6,7 @@ export default function Layout(props) {
   return (
     <>
       <Head>
-      
+        <link rel="icon" href="/favicon.svg" />
         <link
           rel="stylesheet"
           href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/flatly/bootstrap.min.css"
