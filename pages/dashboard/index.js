@@ -1,5 +1,5 @@
-import { AuthContextProvider } from "../../components/AuthContext";
-import DashboardMainPage from "../../components/dashboard/views/Main";
+import { AuthContextProvider } from "../../component/AuthContext";
+import DashboardMainPage from "../../component/dashboard/views/Main";
 
 const Dashboard = () => {
   return (

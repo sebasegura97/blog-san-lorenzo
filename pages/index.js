@@ -1,8 +1,7 @@
-import { useEffect } from "react";
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import General from "../components/General.js";
+import General from "../component/General.js";
 
 import { database } from "../firebase";
 import { collection, getDocs } from "firebase/firestore";
