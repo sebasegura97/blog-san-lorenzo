@@ -1,0 +1,38 @@
+<svg
+   xmlns="http://www.w3.org/2000/svg"
+   width="30"
+   height="30"
+   viewBox="0 0 30 30">
+  <defs
+     id="defs12">
+    <linearGradient
+       xlink:href="#linearGradient916"
+       id="linearGradient918"
+       x1="184.47395"
+       y1="251.65233"
+       x2="468.11597"
+       y2="255.91762"
+       gradientUnits="userSpaceOnUse"
+       gradientTransform="matrix(0.10638297,0,0,0.10638297,-19.574458,-11.914886)" />
+    <linearGradient
+       id="linearGradient916">
+      <stop
+         style="stop-color:#0ccae4;stop-opacity:1"
+         offset="0"
+         id="stop912" />
+      <stop
+         style="stop-color:#fa00ff;stop-opacity:1"
+         offset="0.5"
+         id="stop920" />
+      <stop
+         style="stop-color:#e6a604;stop-opacity:1"
+         offset="1"
+         id="stop914" />
+    </linearGradient>
+  </defs>
+  <path
+     d="m 15.690219,21.825114 c -1.608936,-5.62287 -9.4273395,-0.47255 -14.0781905,0 -4.650851,0.47245 1.822659,-9.45011 6.03351,-14.7068096 4.2109575,-5.2565902 23.3798915,-0.17712 22.3114875,9.1547896 -1.068404,9.33202 -12.657871,11.17479 -14.266807,5.55202 z"
+     fill="url(#paint2_radial_24_22)"
+     id="path6"
+     style="fill:url(#linearGradient918);fill-opacity:1;stroke-width:0.4;stroke:#000000;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none" />
+</svg>
